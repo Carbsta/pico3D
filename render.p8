@@ -26,6 +26,18 @@ function vec3:cross(v)
  z=self.x*v.y-self.y-v.x})
 end
 
+function vec3:add(v)
+ return {x=self.x+v.x,y=self.y+v.y,z=self.z+v.z}
+end
+
+function vec3:sub(v)
+ return {x=self.x-v.x,y=self.y-v.y,z=self.z-v.z}
+end
+
+function vec3:mul(r)
+ return {x=self.x*r,y=self.y*r,z=self.z*r}
+end
+
 function vec3:normalize(v)-- returns new vector
  local len = v:length()
  if (len > 0) then
