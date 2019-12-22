@@ -1,6 +1,9 @@
 pico-8 cartridge // http://www.pico-8.com
 version 18
 __lua__
+cos1 = cos function cos(angle) return cos1(angle/(3.1415*2)) end
+sin1 = sin function sin(angle) return sin1(-angle/(3.1415*2)) end
+
 vec3 = {x=0,y=0,z=0}
 
 function vec3:new(v)
